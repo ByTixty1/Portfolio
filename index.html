@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ali Alghamdi — Analytics, AI & Automation Portfolio. Explore projects in data analytics, AI agents, Power BI dashboards, and technical leadership." />
+  <title>Ali Alghamdi — Portfolio</title>
+
+  <!-- Google Fonts — Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container navbar__inner">
+      <!-- Logo -->
+      <a href="#hero" class="navbar__logo" aria-label="Go to top">
+        <span class="logo-bracket">&lt;</span>Ali<span class="logo-dot">.</span>Dev<span class="logo-bracket"> /&gt;</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="navbar__nav" id="navMenu" role="navigation" aria-label="Primary navigation">
+        <ul class="navbar__list">
+          <li><a href="#hero" class="navbar__link active" data-nav>Home</a></li>
+          <li><a href="#about" class="navbar__link" data-nav>About</a></li>
+          <li><a href="#skills" class="navbar__link" data-nav>Skills</a></li>
+          <li><a href="#projects" class="navbar__link" data-nav>Projects</a></li>
+          <li><a href="#experience" class="navbar__link" data-nav>Experience</a></li>
+          <li><a href="#achievements" class="navbar__link" data-nav>Achievements</a></li>
+          <li><a href="#certifications" class="navbar__link" data-nav>Certifications</a></li>
+          <li><a href="#contact" class="navbar__link" data-nav>Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="navbar__controls">
+        <!-- Dark / Light toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" type="button">
+          <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" type="button">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero introduction">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__greeting reveal">Hello, I'm</p>
+        <h1 class="hero__name reveal">Ali Alghamdi</h1>
+        <p class="hero__title reveal">Analytics Engineer · AI Builder · Automation Architect</p>
+        <p class="hero__tagline reveal">Turning raw data into business decisions and building intelligent systems that scale.</p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--outline">Get In Touch</a>
+        </div>
+        <!-- Animated scroll indicator -->
+        <div class="hero__scroll-indicator" aria-hidden="true">
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════════ -->
+    <section class="section about" id="about" aria-label="About me">
+      <div class="container">
+        <h2 class="section__title reveal">About Me</h2>
+        <p class="section__subtitle reveal">A snapshot of who I am and what I do</p>
+
+        <div class="about__grid">
+          <div class="about__image-wrapper reveal">
+            <div class="about__image-placeholder" aria-label="Profile photo">
+              <span class="about__initials">AA</span>
+            </div>
+          </div>
+
+          <div class="about__text reveal">
+            <p>
+              I'm a results-driven analytics and AI professional with a passion for transforming complex data into actionable insights. With experience spanning Power BI dashboard development, AI agent design, and end-to-end automation pipelines, I bridge the gap between raw data and strategic business value.
+            </p>
+            <p>
+              My journey includes consulting-style engagements, award-winning hackathon projects, and volunteer-driven analytics initiatives. I thrive in environments where technical depth meets creative problem-solving.
+            </p>
+            <div class="about__stats">
+              <div class="stat-card">
+                <span class="stat-card__number">3+</span>
+                <span class="stat-card__label">Years Experience</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-card__number">15+</span>
+                <span class="stat-card__label">Projects Delivered</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-card__number">6</span>
+                <span class="stat-card__label">Certifications</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-card__number">4</span>
+                <span class="stat-card__label">Hackathon Wins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SKILLS
+    ═══════════════════════════════════════════ -->
+    <section class="section skills" id="skills" aria-label="Skills">
+      <div class="container">
+        <h2 class="section__title reveal">Skills & Expertise</h2>
+        <p class="section__subtitle reveal">Technologies and tools I work with daily</p>
+
+        <div class="skills__grid">
+          <!-- Analytics & BI -->
+          <div class="skill-group reveal">
+            <div class="skill-group__icon" aria-hidden="true">📊</div>
+            <h3 class="skill-group__title">Analytics & BI</h3>
+            <ul class="skill-group__list">
+              <li>Power BI</li>
+              <li>DAX & Power Query</li>
+              <li>SQL & Data Modeling</li>
+              <li>Excel Advanced Analytics</li>
+              <li>Tableau</li>
+            </ul>
+          </div>
+
+          <!-- AI & Machine Learning -->
+          <div class="skill-group reveal">
+            <div class="skill-group__icon" aria-hidden="true">🤖</div>
+            <h3 class="skill-group__title">AI & Machine Learning</h3>
+            <ul class="skill-group__list">
+              <li>Python (Pandas, Scikit-learn)</li>
+              <li>LLM Integration & Prompt Engineering</li>
+              <li>AI Agent Development</li>
+              <li>NLP & Text Analytics</li>
+              <li>Computer Vision Basics</li>
+            </ul>
+          </div>
+
+          <!-- Automation & Dev -->
+          <div class="skill-group reveal">
+            <div class="skill-group__icon" aria-hidden="true">⚙️</div>
+            <h3 class="skill-group__title">Automation & Dev</h3>
+            <ul class="skill-group__list">
+              <li>Python Scripting</li>
+              <li>RPA (UiPath, Power Automate)</li>
+              <li>API Integration</li>
+              <li>Git & Version Control</li>
+              <li>HTML / CSS / JavaScript</li>
+            </ul>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-group reveal">
+            <div class="skill-group__icon" aria-hidden="true">🛠️</div>
+            <h3 class="skill-group__title">Tools & Platforms</h3>
+            <ul class="skill-group__list">
+              <li>Azure Cloud Services</li>
+              <li>Microsoft 365 Ecosystem</li>
+              <li>SharePoint & Power Apps</li>
+              <li>Figma & UI Prototyping</li>
+              <li>Jira & Agile Workflows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROJECTS
+    ═══════════════════════════════════════════ -->
+    <section class="section projects" id="projects" aria-label="Featured projects">
+      <div class="container">
+        <h2 class="section__title reveal">Featured Projects</h2>
+        <p class="section__subtitle reveal">A selection of work I'm most proud of</p>
+
+        <!-- Filter buttons -->
+        <div class="projects__filters reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="analytics">Analytics</button>
+          <button class="filter-btn" data-filter="ai">AI</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+
+        <!-- Project cards grid -->
+        <div class="projects__grid">
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-category="analytics">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" style="--accent: var(--clr-cyan)">
+                <span>📊</span>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--small" aria-label="View Executive KPI Dashboard details">Details</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Executive KPI Dashboard</h3>
+              <p class="project-card__desc">A multi-page Power BI dashboard tracking 30+ KPIs across sales, operations, and finance for C-suite stakeholders. Features drill-through pages, RLS security, and automated refresh.</p>
+              <div class="project-card__tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">DAX</span>
+                <span class="tag">SQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-category="ai">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" style="--accent: var(--clr-purple)">
+                <span>🤖</span>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--small" aria-label="View AI Data Agent details">Details</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">AI Data Agent</h3>
+              <p class="project-card__desc">An intelligent conversational agent that lets business users query databases using natural language. Powered by LLM APIs with a RAG pipeline and guardrails for accurate, safe responses.</p>
+              <div class="project-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">LLM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-category="automation">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" style="--accent: var(--clr-green)">
+                <span>⚡</span>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--small" aria-label="View Reporting Automation Pipeline details">Details</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Reporting Automation Pipeline</h3>
+              <p class="project-card__desc">End-to-end automated reporting system that extracts data from 5+ sources, transforms it via Python scripts, and delivers formatted Excel/PDF reports on a scheduled cadence.</p>
+              <div class="project-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">Power Automate</span>
+                <span class="tag">API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-category="events">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" style="--accent: var(--clr-orange)">
+                <span>🔮</span>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--small" aria-label="View Holographic Tech Showcase details">Details</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Holographic Tech Showcase</h3>
+              <p class="project-card__desc">Led the technical implementation of a holographic display installation for a university tech event. Combined hardware setup, 3D content rendering, and audience interaction design.</p>
+              <div class="project-card__tags">
+                <span class="tag">Event Tech</span>
+                <span class="tag">3D Rendering</span>
+                <span class="tag">Leadership</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" data-category="analytics">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" style="--accent: var(--clr-pink)">
+                <span>🤝</span>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--small" aria-label="View Volunteer Impact Analytics details">Details</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Volunteer Impact Analytics</h3>
+              <p class="project-card__desc">Designed interactive dashboards for a non-profit organization to track volunteer engagement, community impact metrics, and resource allocation across multiple programs.</p>
+              <div class="project-card__tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">Non-Profit</span>
+                <span class="tag">Analytics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal" data-category="ai">
+            <div class="project-card__image">
+              <div class="project-card__placeholder" style="--accent: var(--clr-cyan)">
+                <span>🧠</span>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="btn btn--small" aria-label="View Predictive Maintenance Engine details">Details</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Predictive Maintenance Engine</h3>
+              <p class="project-card__desc">Machine learning model for predicting equipment failures using IoT sensor data. Achieved 92% accuracy with a gradient-boosted ensemble, deployed via REST API for real-time scoring.</p>
+              <div class="project-card__tags">
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">IoT</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         EXPERIENCE
+    ═══════════════════════════════════════════ -->
+    <section class="section experience" id="experience" aria-label="Professional experience">
+      <div class="container">
+        <h2 class="section__title reveal">Experience</h2>
+        <p class="section__subtitle reveal">Where I've applied my craft</p>
+
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024 — Present</span>
+              <h3 class="timeline__role">Data Analytics Consultant</h3>
+              <p class="timeline__company">Freelance / Contract</p>
+              <ul class="timeline__details">
+                <li>Delivered 10+ Power BI dashboards for clients in retail, healthcare, and logistics sectors</li>
+                <li>Built automated ETL pipelines reducing manual reporting effort by 80%</li>
+                <li>Designed AI-powered data exploration tools using LLM integrations</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2023 — 2024</span>
+              <h3 class="timeline__role">Analytics Intern</h3>
+              <p class="timeline__company">Tech Solutions Co.</p>
+              <ul class="timeline__details">
+                <li>Developed sales performance dashboards tracked by 50+ stakeholders</li>
+                <li>Automated weekly reporting cycle with Python and Power Automate</li>
+                <li>Collaborated with cross-functional teams on data governance initiatives</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2022 — 2023</span>
+              <h3 class="timeline__role">Technical Team Lead</h3>
+              <p class="timeline__company">University Innovation Club</p>
+              <ul class="timeline__details">
+                <li>Led a team of 8 developers on event technology projects including holographic displays</li>
+                <li>Managed end-to-end project delivery for 3 major campus tech events</li>
+                <li>Mentored junior members in Python, Git, and data visualization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ACHIEVEMENTS
+    ═══════════════════════════════════════════ -->
+    <section class="section achievements" id="achievements" aria-label="Achievements and awards">
+      <div class="container">
+        <h2 class="section__title reveal">Achievements</h2>
+        <p class="section__subtitle reveal">Recognition and milestones</p>
+
+        <div class="achievements__grid">
+          <div class="achievement-card reveal">
+            <div class="achievement-card__icon" aria-hidden="true">🏆</div>
+            <h3 class="achievement-card__title">1st Place — National AI Hackathon</h3>
+            <p class="achievement-card__desc">Built an AI-powered compliance engine for solar PV systems in 48 hours. Judges praised the innovative RAG approach and production-ready architecture.</p>
+            <span class="achievement-card__year">2025</span>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="achievement-card__icon" aria-hidden="true">🥇</div>
+            <h3 class="achievement-card__title">Best Analytics Solution — Data Viz Challenge</h3>
+            <p class="achievement-card__desc">Created an interactive dashboard that uncovered $2M in optimization opportunities for a simulated supply chain scenario.</p>
+            <span class="achievement-card__year">2024</span>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="achievement-card__icon" aria-hidden="true">🏅</div>
+            <h3 class="achievement-card__title">Top 3 — Campus Innovation Award</h3>
+            <p class="achievement-card__desc">Recognized for the holographic tech showcase project that attracted 500+ attendees and was featured in university media.</p>
+            <span class="achievement-card__year">2023</span>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="achievement-card__icon" aria-hidden="true">⚡</div>
+            <h3 class="achievement-card__title">Automation Excellence Award</h3>
+            <p class="achievement-card__desc">Received company-wide recognition for building an RPA solution that saved 200+ manual hours per month in report generation.</p>
+            <span class="achievement-card__year">2024</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CERTIFICATIONS
+    ═══════════════════════════════════════════ -->
+    <section class="section certifications" id="certifications" aria-label="Certifications">
+      <div class="container">
+        <h2 class="section__title reveal">Certifications</h2>
+        <p class="section__subtitle reveal">Continuous learning and professional development</p>
+
+        <div class="certifications__grid">
+          <div class="cert-card reveal">
+            <div class="cert-card__badge" aria-hidden="true">📜</div>
+            <h3 class="cert-card__title">Microsoft Certified: Power BI Data Analyst Associate</h3>
+            <p class="cert-card__issuer">Microsoft</p>
+            <span class="cert-card__date">2024</span>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-card__badge" aria-hidden="true">📜</div>
+            <h3 class="cert-card__title">Azure AI Fundamentals (AI-900)</h3>
+            <p class="cert-card__issuer">Microsoft</p>
+            <span class="cert-card__date">2024</span>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-card__badge" aria-hidden="true">📜</div>
+            <h3 class="cert-card__title">Google Data Analytics Professional Certificate</h3>
+            <p class="cert-card__issuer">Google / Coursera</p>
+            <span class="cert-card__date">2023</span>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-card__badge" aria-hidden="true">📜</div>
+            <h3 class="cert-card__title">IBM Data Science Professional Certificate</h3>
+            <p class="cert-card__issuer">IBM / Coursera</p>
+            <span class="cert-card__date">2023</span>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-card__badge" aria-hidden="true">📜</div>
+            <h3 class="cert-card__title">UiPath RPA Associate</h3>
+            <p class="cert-card__issuer">UiPath</p>
+            <span class="cert-card__date">2024</span>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-card__badge" aria-hidden="true">📜</div>
+            <h3 class="cert-card__title">Python for Data Science — Advanced</h3>
+            <p class="cert-card__issuer">DataCamp</p>
+            <span class="cert-card__date">2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════════ -->
+    <section class="section contact" id="contact" aria-label="Contact form">
+      <div class="container">
+        <h2 class="section__title reveal">Get In Touch</h2>
+        <p class="section__subtitle reveal">Have a project in mind or just want to chat? Let's connect.</p>
+
+        <div class="contact__grid">
+          <!-- Contact Info -->
+          <div class="contact__info reveal">
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">📧</span>
+              <div>
+                <h3>Email</h3>
+                <p>ali.alghamdi@email.com</p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">📍</span>
+              <div>
+                <h3>Location</h3>
+                <p>Jeddah, Saudi Arabia</p>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">🔗</span>
+              <div>
+                <h3>Socials</h3>
+                <div class="contact__socials">
+                  <a href="#" class="social-link" aria-label="LinkedIn profile" target="_blank" rel="noopener">LinkedIn</a>
+                  <a href="#" class="social-link" aria-label="GitHub profile" target="_blank" rel="noopener">GitHub</a>
+                  <a href="#" class="social-link" aria-label="Twitter / X profile" target="_blank" rel="noopener">X / Twitter</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="formName" class="form-label">Full Name</label>
+              <input type="text" id="formName" class="form-input" placeholder="John Doe" autocomplete="name" required />
+              <span class="form-error" id="nameError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="formEmail" class="form-label">Email Address</label>
+              <input type="email" id="formEmail" class="form-input" placeholder="john@example.com" autocomplete="email" required />
+              <span class="form-error" id="emailError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="formSubject" class="form-label">Subject</label>
+              <input type="text" id="formSubject" class="form-input" placeholder="Project inquiry" required />
+              <span class="form-error" id="subjectError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage" class="form-label">Message</label>
+              <textarea id="formMessage" class="form-input form-textarea" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <span class="form-error" id="messageError" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              Send Message
+            </button>
+            <p class="form-success" id="formSuccess" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#hero" class="navbar__logo" aria-label="Go to top">
+            <span class="logo-bracket">&lt;</span>Ali<span class="logo-dot">.</span>Dev<span class="logo-bracket"> /&gt;</span>
+          </a>
+          <p class="footer__tagline">Building data-driven solutions that matter.</p>
+        </div>
+
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noopener">X / Twitter</a></li>
+            <li><a href="mailto:ali.alghamdi@email.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Ali Alghamdi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
