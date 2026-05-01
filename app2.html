@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ali Alghamdi — Country Explorer" />
+  <title>Country Explorer - Ali Alghamdi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <h1 class="header-name">Ali Saleh Alghamdi</h1>
+      <p class="header-subtitle">Data &amp; Automation Engineer</p>
+    </div>
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="labs.html">Labs</a></li>
+          <li><a href="myworks.html">My Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="container container--wide">
+      <div class="app-layout">
+
+        <!-- Sidebar -->
+        <aside class="app-sidebar">
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">About This App</h3>
+            <p class="sidebar-text">Search and explore countries using the REST Countries API.</p>
+            <p class="sidebar-text">Data is fetched live from <strong>restcountries.com</strong>.</p>
+          </div>
+          <div class="sidebar-block">
+            <h3 class="sidebar-title">Portfolio Links</h3>
+            <ul class="sidebar-links">
+              <li><a href="myworks.html">← My Works</a></li>
+              <li><a href="app1.html">View App 1</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Content -->
+        <div class="app-content">
+          <div class="content-card">
+            <h2>Country Explorer</h2>
+
+            <!-- Search Row -->
+            <div class="search-row">
+              <input type="text" id="searchInput" class="search-input" placeholder="Search for a country..." />
+              <button id="searchBtn" class="btn-search">Search</button>
+            </div>
+
+            <!-- Status -->
+            <div id="statusMsg" class="status-msg" style="display:none;"></div>
+
+            <!-- Loading -->
+            <div id="loadingState" class="loading-state" style="display:none;">
+              <div class="spinner"></div>
+              <span>Fetching countries...</span>
+            </div>
+
+            <!-- Results -->
+            <div id="resultsGrid" class="countries-grid"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Ali Saleh Alghamdi — CPIT-405 Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="app2.js"></script>
+
+</body>
+</html>
